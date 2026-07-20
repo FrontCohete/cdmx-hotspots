@@ -5,9 +5,9 @@ import { useTypewriter } from '../hooks/useUI'
 import { HOTSPOTS } from '../data/hotspots'
 
 const NOTICES = [
-  'Este proyecto fue elaborado mediante datos obtenidos de la Fiscalía.',
-  'Fuente: carpetas de investigación de la FGJ · Ciudad de México.',
-  'Análisis geoespacial con fines informativos y de investigación.',
+  'Este proyecto fue elaborado mediante datos obtenidos de la FGJ de la Ciudad de México.',
+  'Fuente: Carpetas de investigación de la FGJ · Ciudad de México.',
+  'Análisis con fines informativos y de investigación.',
 ]
 
 function HeatField() {
