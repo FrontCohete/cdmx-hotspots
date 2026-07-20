@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://FrontCohete.github.io/cdmx-hotspots/sitemap.xml

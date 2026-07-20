@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Puntos de Alta Incidencia Delictiva · Hotspots CDMX</title>
+    <meta
+      name="description"
+      content="Directorio interactivo de análisis de hotspots delictivos en la Ciudad de México. Mapas de calor y clústeres de incidencia elaborados con datos abiertos de la FGJ-CDMX."
+    />
+    <meta
+      name="keywords"
+      content="hotspots, incidencia delictiva, CDMX, Ciudad de México, análisis criminal, mapas de calor, FGJ, fiscalía, seguridad pública, alcaldías, geoanálisis"
+    />
+    <meta name="author" content="Tu Nombre" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0a0f1c" />
+    <link rel="canonical" href="https://FrontCohete.github.io/cdmx-hotspots/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Hotspots CDMX" />
+    <meta property="og:title" content="Puntos de Alta Incidencia Delictiva · Hotspots CDMX" />
+    <meta
+      property="og:description"
+      content="Explora mapas interactivos de hotspots delictivos por alcaldía, construidos con datos abiertos de la Fiscalía de la Ciudad de México."
+    />
+    <meta property="og:url" content="https://FrontCohete.github.io/cdmx-hotspots/" />
+    <meta property="og:image" content="https://FrontCohete.github.io/cdmx-hotspots/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+
+    <!-- ══════════════ TWITTER / X CARDS ══════════════ -->
+
+    <!-- ══════════════ PROTECCIÓN / ATRIBUCIÓN ══════════════ -->
+    <meta name="copyright" content="© 2026 Julio Cohete. Todos los derechos reservados." />
+    <meta name="rating" content="general" />
+
+    <!-- ══════════════ DATOS ESTRUCTURADOS (JSON-LD) ══════════════
+         Ayuda a Google a entender el sitio como un proyecto de análisis de datos.
+         ✏️ EDITA: name, author, url, sameAs (tus redes) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Hotspots CDMX — Puntos de Alta Incidencia Delictiva",
+        "url": "https://FrontCohete.github.io/cdmx-hotspots/",
+        "inLanguage": "es-MX",
+        "description": "Directorio interactivo de análisis de hotspots delictivos en la Ciudad de México, elaborado con datos abiertos de la FGJ-CDMX.",
+        "author": {
+          "@type": "Person",
+          "name": "Julio Cohete",
+          "sameAs": [
+            "https://www.linkedin.com/in/julio-cohete-0w0/",
+            "https://github.com/FrontCohete",
+          ]
+        },
+        "about": {
+          "@type": "Dataset",
+          "name": "Carpetas de investigación FGJ-CDMX",
+          "description": "Datos abiertos de carpetas de investigación de la Fiscalía General de Justicia de la Ciudad de México.",
+          "creator": { "@type": "Organization", "name": "FGJ-CDMX" }
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

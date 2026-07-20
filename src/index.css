@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Tokens base ─────────────────────────────────────────── */
+:root {
+  color-scheme: dark;
+  --heat: linear-gradient(90deg, #b62c2c, #9c0f0b, #bd1748, #fd6161, #e8112d);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-900 text-paper font-body antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #e8c811;
+  color: #fff;
+}
+
+/* Scrollbar discreta acorde al tema */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1c;
+}
+::-webkit-scrollbar-thumb {
+  background: #22304a;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c7bb6;
+}
+
+/* ── Firma visual: línea de calor ────────────────────────── */
+.heat-rule {
+  height: 3px;
+  background: var(--heat);
+  border-radius: 999px;
+}
+
+.heat-text {
+  background: var(--heat);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Grilla cartográfica sutil de fondo */
+.map-grid {
+  background-image:
+    linear-gradient(rgba(139, 151, 173, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 151, 173, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Foco visible accesible */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #ffdd57;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Cursor del efecto de tecleo */
+.type-caret::after {
+  content: '▌';
+  margin-left: 2px;
+  color: #ffdd57;
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Rendimiento y accesibilidad: reducir movimiento ─────── */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
